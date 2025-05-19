@@ -1,43 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .game {
   width: 500px;
   height: 300px;
   background-color: tomato;
   position: relative;
   overflow: hidden;
-  border-radius:12px
+  border-radius: 12px;
 }
 .dino {
   height: 50px;
   position: absolute;
   bottom: 0;
-  left:30px
+  left: 30px;
 }
 .kaktyc {
   height: 50px;
   position: absolute;
   bottom: 0;
   right: 0;
-  animation: kaktyc 1.5s linear infinite
+  animation: kaktyc 1.5s linear infinite;
 }
 @keyframes kaktyc {
-  from {right:0}
-  to {right:500px}
+  from {
+    right: 0;
+  }
+  to {
+    right: 500px;
+  }
 }
-.dzhamp {animation: dzhamp 0.5s linear infinite}
+.dzhamp {
+  animation: dzhamp 0.5s linear infinite;
+}
 @keyframes dzhamp {
-  0% {bottom:0}
-  30% {bottom:100px}
-  70% {bottom:100px}
-  100% {bottom:0px}
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 100px;
+  }
+  70% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 .khmarka {
   height: 50px;
   position: absolute;
   bottom: 200px;
   right: 0;
-  animation: khmarka 3s linear infinite
+  animation: khmarka 3s linear infinite;
 }
 @keyframes khmarka {
-  from {right:0}
-  to {right:500px}
+  from {
+    right: 0;
+  }
+  to {
+    right: 500px;
+  }
+}
+.game-over {
+  margin-top: 30px;
+  background: white;
+  border: 2px solid #333;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+.final-score {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #4caf50;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #45a049;
 }
